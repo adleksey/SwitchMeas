@@ -23,6 +23,11 @@
       <height>791</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
     <property name="currentIndex">
      <number>0</number>
     </property>
@@ -30,13 +35,13 @@
      <attribute name="title">
       <string>VNA</string>
      </attribute>
-     <widget class="QPushButton" name="btn_connectVNA">
+     <widget class="QPushButton" name="btn_VNA_connect">
       <property name="geometry">
        <rect>
-        <x>230</x>
-        <y>80</y>
+        <x>300</x>
+        <y>40</y>
         <width>121</width>
-        <height>24</height>
+        <height>31</height>
        </rect>
       </property>
       <property name="text">
@@ -46,14 +51,148 @@
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>130</x>
-        <y>250</y>
-        <width>551</width>
-        <height>91</height>
+        <x>440</x>
+        <y>40</y>
+        <width>321</width>
+        <height>31</height>
        </rect>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string>VNA: not connected</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="txt_VISA_resource">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="plainText">
+       <string>TCPIP0::192.168.0.222::5025::SOCKET</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="combo_switch_model">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="currentText">
+       <string>WR75 R switch</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>WR75 R switch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>WR62 R switch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>WR51 R switch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>WR34 R switch</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>241</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Select model of RF switch for measuring:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>120</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Preset VNA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>190</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Select VNA's CalKit and complete calibration:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Type VNA's VISA resource name and connect</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>210</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>210</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start calibration</string>
       </property>
      </widget>
     </widget>
