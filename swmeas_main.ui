@@ -133,7 +133,7 @@
        <string>Select model of RF switch for measuring:</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="btn_VNA_preset">
       <property name="geometry">
        <rect>
         <x>300</x>
